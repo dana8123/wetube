@@ -1,14 +1,19 @@
 {
-  "name": "wetube",
-  "version": "1.0.0",
-  "description": "Cloning Youtube",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Dana",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "wetube",
+	"version": "1.0.0",
+	"description": "Cloning youtube with Vanilla Java script and Node JS",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/danaisboss/wetube.git"
+	},
+	"author": "Dana",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/danaisboss/wetube/issues"
+	},
+	"homepage": "https://github.com/danaisboss/wetube#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
 }
