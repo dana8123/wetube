@@ -4,4 +4,4 @@ export const logout = (req, res) => res.render("Logout");
 export const users = (req, res) => res.render("users");
 export const userDetail = (req, res) => res.render("user Detail");
 export const editProfile = (req, res) => res.render("Edit Profile");
-export const changPassword = (req, res) => res.render("Change password");
+export const changePassword = (req, res) => res.render("Change password");
