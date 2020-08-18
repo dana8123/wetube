@@ -1,22 +1,22 @@
-export const home = (req, res) => res.render("home", { pageTitle: "home" });
+import { videos } from "../db";
 
-export const videos = (req, res) =>
-	res.render("videos", { pageTitle: "videos" });
-
-export const upload = (req, res) =>
-	res.render("upload", { pageTitle: "upload" });
-
-export const videoDetail = (req, res) =>
+export const home = (req, res) => {
+	res.render("Home", { pageTitle: "home", videos });
+};
+export const upload = (req, res) => {
+	res.render("Upload", { pageTitle: "Upload" });
+};
+export const videoDetail = (req, res) => {
 	res.render("ViedoDetail", { pageTitle: "video Detail" });
-
-export const deleteVideo = (req, res) =>
-	res.render("Delete Video", { pageTitle: "delete Video" });
-
+};
+export const deleteVideo = (req, res) => {
+	res.render("DeleteVideo", { pageTitle: "delete Video" });
+};
 export const search = (req, res) => {
 	const {
 		query: { term: searchingBy },
 	} = req;
-	res.render("SEARCH", { pageTitle: "search", searchingBy });
+	res.render("search", { pageTitle: "search", searchingBy });
 };
 
 export const editVideo = (req, res) =>
