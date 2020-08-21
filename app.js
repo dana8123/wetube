@@ -14,7 +14,8 @@ app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(helmet());
+app.use(helmet({ contentSecurityPolicy: false }));
+//app.use(helmet());  *동영상실행이안돼서
 app.use(morgan("dev"));
 
 app.use(localsMiddleware);
