@@ -4,8 +4,7 @@ export const videos = [
 		title: "video awsome",
 		description: "This video is something i like",
 		views: 24,
-		videoFile:
-			"https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
+		videoFile: "http://www.tomodevel.jp/material/video/disneyTour.mp4",
 		creator: {
 			id: 11515,
 			Name: "YJ",
@@ -18,7 +17,7 @@ export const videos = [
 		description: "This video is something i like",
 		views: 24,
 		videoFile:
-			"https://ia800300.us.archive.org/17/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
+			"https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
 		creator: {
 			id: 11515,
 			Name: "YJ",
@@ -30,7 +29,8 @@ export const videos = [
 		title: "video nice",
 		description: "This video is something i like",
 		views: 24,
-		videoFile: "https://youtu.be/aqz-KE-bpKQ",
+		videoFile:
+			"https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
 		creator: {
 			id: 11515,
 			Name: "YJ",
