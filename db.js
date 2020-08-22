@@ -4,7 +4,8 @@ export const videos = [
 		title: "video awsome",
 		description: "This video is something i like",
 		views: 24,
-		videoFile: "http://www.tomodevel.jp/material/video/disneyTour.mp4",
+		videoFile:
+			"https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
 		creator: {
 			id: 11515,
 			Name: "YJ",
