@@ -26,7 +26,7 @@ export const postLogin = (req, res) => {
 
 export const logout = (req, res) => res.render("Logout");
 export const users = (req, res) => res.render("users");
-export const userDetail = (req, res) => res.render("user Detail");
+export const userDetail = (req, res) => res.render("userDetail");
 export const editProfile = (req, res) =>
 	res.render("editProfile", { pageTitle: "editProfile" });
 export const changePassword = (req, res) =>
