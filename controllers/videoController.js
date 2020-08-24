@@ -1,13 +1,24 @@
 import { videos } from "../db";
+import { routes } from "../routes";
 
 export const home = (req, res) => {
 	res.render("Home", { pageTitle: "home", videos });
 };
-export const upload = (req, res) => {
+
+export const getUpload = (req, res) => {
 	res.render("Upload", { pageTitle: "Upload" });
 };
+
+export const postUpload = (req, res) => {
+	const {
+		body: { file, title, description },
+	} = req;
+	res.redirect(routes.videoDetail(3526666));
+};
+// TO DO: upload and save video
+
 export const videoDetail = (req, res) => {
-	res.render("ViedoDetail", { pageTitle: "video Detail" });
+	res.render("VideoDetail", { pageTitle: "video Detail" });
 };
 export const deleteVideo = (req, res) => {
 	res.render("DeleteVideo", { pageTitle: "delete Video" });
