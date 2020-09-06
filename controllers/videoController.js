@@ -36,8 +36,16 @@ export const search = (req, res) => {
 	res.render("search", { pageTitle: "search", searchingBy, videos });
 };
 
-export const videoDetail = (req, res) => {
-	res.render("VideoDetail", { pageTitle: "video Detail" });
+export const videoDetail = async (req, res) => {
+	const {
+		params: { id },
+	} = req;
+	try {
+		const video = await Video.findById(id);
+		res.render("videoDetail", { pageTitle: "video Detail", video });
+	} catch (error) {
+		console.log(error);
+	}
 };
 export const deleteVideo = (req, res) => {
 	res.render("DeleteVideo", { pageTitle: "delete Video" });
