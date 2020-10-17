@@ -5,3 +5,4 @@ passport.use(User.creatstrategy());
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+

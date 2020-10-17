@@ -1,0 +1,56 @@
+header.header {
+	background-color: $pink;
+	margin-bottom: 50px;
+}
+
+.header__wrapper {
+	padding: 5px 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	font-size: 30px;
+	font-weight: 300;
+	.header__column {
+		grid-template-rows: inherit;
+		//align-self: center;
+		justify-self: stretch;
+		width: 100%;
+		:nth-child(1) {
+			display: flex;
+			order: 1;
+			justify-content: flex-end;
+			margin-right: 10px;
+		}
+		:nth-child(2) {
+			order: 2;
+		}
+		:last-child {
+			order: 3;
+		}
+	}
+}
+
+form {
+	width: 100%;
+	border-radius: 20px;
+	input {
+		display: flex;
+		align-items: center;
+		border-style: hidden;
+		width: 100%;
+		border-radius: 5px;
+		height: 30px;
+	}
+}
+
+ul {
+	width: 100%;
+	display: flex;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+	a {
+		margin-left: 30px;
+	}
+}
