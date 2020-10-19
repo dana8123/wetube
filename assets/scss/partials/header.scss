@@ -1,6 +1,7 @@
 header.header {
 	background-color: $pink;
 	margin-bottom: 50px;
+	color: white;
 }
 
 .header__wrapper {
@@ -12,9 +13,7 @@ header.header {
 	font-size: 30px;
 	font-weight: 300;
 	.header__column {
-		grid-template-rows: inherit;
-		//align-self: center;
-		justify-self: stretch;
+		//grid-template-rows: inherit;
 		width: 100%;
 		:nth-child(1) {
 			display: flex;
@@ -23,15 +22,18 @@ header.header {
 			margin-right: 10px;
 		}
 		:nth-child(2) {
-			order: 2;
+			display: grid;
+			justify-items: center;
 		}
 		:last-child {
+			display: flex;
+			justify-content: flex-end;
 			order: 3;
 		}
 	}
 }
 
-form {
+.header form {
 	width: 100%;
 	border-radius: 20px;
 	input {

@@ -105,15 +105,11 @@ table {
   border-spacing: 0; }
 
 html,
-head script {
-  color: white; }
-
-html,
 body {
   height: 100%; }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0edf0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px; }
 
@@ -125,11 +121,13 @@ main {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 header.header {
   background-color: #e35f75;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  color: white; }
 
 .header__wrapper {
   padding: 5px 0px;
@@ -140,8 +138,6 @@ header.header {
   font-size: 30px;
   font-weight: 300; }
   .header__wrapper .header__column {
-    grid-template-rows: inherit;
-    justify-self: stretch;
     width: 100%; }
     .header__wrapper .header__column :nth-child(1) {
       display: flex;
@@ -149,14 +145,17 @@ header.header {
       justify-content: flex-end;
       margin-right: 10px; }
     .header__wrapper .header__column :nth-child(2) {
-      order: 2; }
+      display: grid;
+      justify-items: center; }
     .header__wrapper .header__column :last-child {
+      display: flex;
+      justify-content: flex-end;
       order: 3; }
 
-form {
+.header form {
   width: 100%;
   border-radius: 20px; }
-  form input {
+  .header form input {
     display: flex;
     align-items: center;
     border-style: hidden;
@@ -172,3 +171,108 @@ ul {
   font-weight: 500; }
   ul a {
     margin-left: 30px; }
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 13px;
+  font-weight: 100;
+  color: #4e5255; }
+
+.footer__icon {
+  margin-bottom: 10px; }
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form-container form {
+  margin-top: 100px;
+  padding-bottom: 6px;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px; }
+
+.form-container input:not([type="file"]),
+button {
+  display: block;
+  width: 320px;
+  height: 30px;
+  border-style: hidden;
+  margin: 20px 20px 0px 0px;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.17); }
+
+input[type="submit"],
+.form-container button {
+  background-color: #4e5255;
+  color: white;
+  font-weight: 400;
+  font-size: 20px; }
+
+textarea {
+  font-size: 15px;
+  border-style: none;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 320px;
+  height: 200px; }
+
+.social_login {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .social_login button {
+    border-style: none;
+    color: white;
+    margin: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px; }
+    .social_login button i {
+      display: flex;
+      justify-content: center;
+      font-size: 40px; }
+  .social_login .social_login--github {
+    background-color: #4e5255; }
+  .social_login .social_login--facebook {
+    background-color: #276d9b; }
+
+.video-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .video-detail__container .video__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    margin-top: 50px; }
+    .video-detail__container .video__info button {
+      width: 100px;
+      background-color: #4e5255;
+      border-style: none;
+      border-radius: 15px;
+      color: white;
+      padding: 5px;
+      margin-bottom: 50px; }
+    .video-detail__container .video__info .video__title,
+    .video-detail__container .video__info .video__views,
+    .video-detail__container .video__info .video__description {
+      display: block;
+      margin-bottom: 15px; }
+    .video-detail__container .video__info .video__title {
+      font-size: 35px;
+      font-weight: 400; }
+    .video-detail__container .video__info .video__views,
+    .video-detail__container .video__info .video__comments {
+      font-size: 15px;
+      color: #4e5255; }
+    .video-detail__container .video__info .video__description {
+      font-size: 20px; }
